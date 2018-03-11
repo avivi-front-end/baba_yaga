@@ -118,6 +118,10 @@ h2 {font-size: 240px; color: #fff; font-family: 'Fira', Arial, sans-serif ;}
 /*/fonts*/
 
 .screen-first {width: 100vw; height: 100vh; background: linear-gradient(to right, #eed0b2, #da4918);}
+.button { padding: 20px 20px; font-weight: 700; font-size: 20px; color: #424652; border-radius: 4px; border: 2px solid #d14c28; margin: 20px 0;
+    &:hover {text-decoration: none;}
+}
+
 
 .screen { display: flex; position: relative; flex-direction: column;
     &__left { width: 40%;}
@@ -169,7 +173,7 @@ h2 {font-size: 240px; color: #fff; font-family: 'Fira', Arial, sans-serif ;}
     &__header {
         h2 {color: #424652; margin: 0; letter-spacing: 9px;}
     }
-    &__baba {    position: fixed; top: 120px; left: 293px;}
+    &__baba {     position: absolute; top: 145px; left: 0; z-index: -1;}
     &__torso {display: flex;}
     &__left {position: relative;  width: 40%;}
     &__right { width: 60%;}
@@ -177,6 +181,24 @@ h2 {font-size: 240px; color: #fff; font-family: 'Fira', Arial, sans-serif ;}
         p {font-size: 20px; color:#424652; font-weight: 700; margin: 0;}
     }
     &__aplicates { display: flex; align-items: center; justify-content: space-between; }
+    &__row {    display: flex;  align-items: center; width: 100%; margin: 15px 0;
+       &--right { justify-content: flex-end; }
+        &--left {justify-content: flex-start;}
+
+    }
+    &__place-one {display: flex; justify-content: space-between; align-items: flex-end; width: 100%;}
+    &__product { padding: 10px; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; position: relative;
+        p {color: #424652; font-size: 20px; font-weight: 700; margin: 0;}
+        a {color: #d14c28; }
+        img {position: absolute; top: 0; left: 0; z-index: -1;}
+    }
+    &__little {width: 244px; height: 313px;}
+    &__big {width: 508px; height: 502px; padding-top: 10px;
+        img {}
+    }
+    &__place-two { display: flex; align-items: flex-end; justify-content: space-between; width: 65.5%;}
+    &__button-place { display: flex; align-items: center; justify-content: center;}
+
 }
 
 
