@@ -69,7 +69,7 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 
 .footer_placeholder{height: 200px;}
-.footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;overflow:hidden;}
+.footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;overflow:hidden;position: fixed;}
 
 input, textarea{
     &::-webkit-input-placeholder {color:#212121;}
@@ -118,7 +118,7 @@ h2 {font-size: 240px; color: #fff; font-family: 'Fira', Arial, sans-serif ;}
 /*/fonts*/
 
 .screen-first {width: 100vw; height: 100vh; background: linear-gradient(to right, #eed0b2, #da4918);}
-.button { padding: 20px 20px; font-weight: 700; font-size: 20px; color: #424652; border-radius: 4px; border: 2px solid #d14c28; margin: 20px 0;
+.button {padding: 18px 16px 11px 16px; font-weight: 700; font-size: 20px; color: #424652; border-radius: 4px; border: 3px solid #d14c28;
     &:hover {text-decoration: none;}
 }
 
@@ -170,42 +170,38 @@ h2 {font-size: 240px; color: #fff; font-family: 'Fira', Arial, sans-serif ;}
 }
 
 .promo { background-color: #e8e9eb;
-
     &__header { position: fixed; z-index: -1;
         h2 {color: #424652; margin: 0; letter-spacing: 9px;}
     }
-    &__baba {     position: absolute; top: 145px; left: 0; z-index: -1;}
-    &__torso {display: flex; padding-top: 250px;}
+    &__baba {     position: absolute; top: 119px; left: -14px; z-index: 0;}
+    &__torso {display: flex;}
     &__left {position: relative;  width: 40%;}
-    &__right { width: 60%;}
-    &__content { display: flex;}
-    &__col {width: 30%; display: flex; flex-direction: column;}
-    &__blank {width: 100%; background-color: red;
-        &--b {height: 315px;}
-        &--l {height: 150px;}
+    &__right { width: 71%;  padding-top: 204px; padding-right: 55px;}
+    &__apps {margin: 13px 0 22px 0;}
+    &__app {    background-color: #fff; width: 65.5%;  padding: 15px; border-radius: 4px;
+        p {font-size: 20px; color:#424652; font-weight: 700; margin: 0; padding: 5px 5px;}
+        &--apple {margin-left: 25px; }
+        &--google {margin-right: 26px; }
     }
-    &__app {    background-color: #fff;  width: 200%;  padding: 15px; border-radius: 4px;
-        p {font-size: 20px; color:#424652; font-weight: 700; margin: 0;}
-    }
-    &__aplicates { display: flex; align-items: center; justify-content: space-between; }
-    &__row {    display: flex;  align-items: center; width: 100%; margin: 15px 0;
+    &__aplicates { display: flex; align-items: center; justify-content: space-between; padding: 22px 30px;}
+    &__row {    display: flex;  align-items: center; width: 100%; margin: 13px 0 25px 0;
        &--right { justify-content: flex-end; }
         &--left {justify-content: flex-start;}
-
     }
     &__place-one {display: flex; justify-content: space-between; align-items: flex-end; width: 100%;}
-    &__product { width: 200%; padding: 10px; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; position: relative;
-        p {color: #424652; font-size: 20px; font-weight: 700; margin: 0;}
-        a {color: #d14c28; }
-        img {position: absolute; top: 0; left: 0; z-index: -1;}
-    }
-    &__little {width: 244px; height: 313px;}
-    &__big {width: 508px; height: 502px; padding-top: 10px;
-        img {}
+    &__product {border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; position: relative;
+        div {position: absolute; top: 21px; left: 21px;
+            a {color: #d14c28;}
+            a:hover {text-decoration: none; }
+        }
+        p {color: #424652; font-size: 20px; font-weight: 700; margin: 0; margin-bottom: 8px;}
+        &>a {color: #d14c28; position: absolute; bottom: 19px; left: 21px;}
+        &>a:hover {text-decoration: none;}
+        img {z-index: -1; border-radius: 4px;}
     }
     &__place-two { display: flex; align-items: flex-end; justify-content: space-between; width: 65.5%;}
-    &__button-place { display: flex; align-items: center; justify-content: center;}
-
+    &__button-place { display: flex; align-items: center; justify-content: center; padding-right: 105px; margin-bottom: 25px;}
+    &__button {margin-top: -2px;}
 }
 
 
