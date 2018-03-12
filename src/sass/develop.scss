@@ -170,14 +170,21 @@ h2 {font-size: 240px; color: #fff; font-family: 'Fira', Arial, sans-serif ;}
 }
 
 .promo { background-color: #e8e9eb;
-    &__header {
+
+    &__header { position: fixed; z-index: -1;
         h2 {color: #424652; margin: 0; letter-spacing: 9px;}
     }
     &__baba {     position: absolute; top: 145px; left: 0; z-index: -1;}
-    &__torso {display: flex;}
+    &__torso {display: flex; padding-top: 250px;}
     &__left {position: relative;  width: 40%;}
     &__right { width: 60%;}
-    &__app {    background-color: #fff;  width: 60%;  padding: 15px; border-radius: 4px;
+    &__content { display: flex;}
+    &__col {width: 30%; display: flex; flex-direction: column;}
+    &__blank {width: 100%; background-color: red;
+        &--b {height: 315px;}
+        &--l {height: 150px;}
+    }
+    &__app {    background-color: #fff;  width: 200%;  padding: 15px; border-radius: 4px;
         p {font-size: 20px; color:#424652; font-weight: 700; margin: 0;}
     }
     &__aplicates { display: flex; align-items: center; justify-content: space-between; }
@@ -187,7 +194,7 @@ h2 {font-size: 240px; color: #fff; font-family: 'Fira', Arial, sans-serif ;}
 
     }
     &__place-one {display: flex; justify-content: space-between; align-items: flex-end; width: 100%;}
-    &__product { padding: 10px; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; position: relative;
+    &__product { width: 200%; padding: 10px; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; position: relative;
         p {color: #424652; font-size: 20px; font-weight: 700; margin: 0;}
         a {color: #d14c28; }
         img {position: absolute; top: 0; left: 0; z-index: -1;}
