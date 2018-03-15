@@ -136,7 +136,7 @@ a:hover {text-decoration: none;}
     &__row {min-height: 388px; margin-bottom: 45px; margin-left: -10px;
         &--vid {height: auto;}
     }
-    &__img-large {border-radius: 4px; margin-bottom: 12px;}
+    &__img-large {border-radius: 4px;}
     &__img-little {display: inline-block; padding: 0;}
     &__sensation {padding-right: 10px; line-height: 21px;}
     &__baba {top: 124px; left: -5px;}
@@ -156,10 +156,26 @@ a:hover {text-decoration: none;}
         }
     }
     &__source {display: inline-block;}
-    &__img-box {position: relative;}
+    &__img-box {position: relative; margin-bottom: 12px;}
     &__hot {position: absolute; bottom: 5px; left: -6px;}
     &__video {border-radius: 4px; width: 100%; height: 370px; margin-bottom: 18px;}
 }
+
+
+.media { background-color: #e8e9eb;
+    &__header {width: 100%; max-width: 1290px; }
+    &__baba {right: 68px; left: auto; top: 50px;}
+    &__torso {justify-content: flex-start; padding: 0 8px;}
+    &__albums {font-size: 22px; color: #424652; font-weight: 700; display: inline-block; margin-bottom: 16px;}
+    &__right {padding-top: 252px;}
+    &__intro {display: flex; flex-wrap: wrap;  margin: -10px 0 10px -10px;}
+    &__img-box {margin: 10px 10px; position: relative;
+        a { background-color: #424652;  position: absolute; left: 10px; bottom: 10px;  padding: 6px 7px 3px 5px;  -webkit-border-radius: 4px;  -moz-border-radius: 4px; border-radius: 4px;}
+    }
+    &__all {display: flex; flex-wrap: wrap; width: 66%; border-bottom: 1px solid; margin: -10px 0 10px -10px;}
+}
+
+
 
 
 
