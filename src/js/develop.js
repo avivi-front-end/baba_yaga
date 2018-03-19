@@ -4,6 +4,14 @@ $(document).ready(function () {
        infinite: true,
        dots: false,
        slidesToShow: 5,
-       slidesToScroll: 3
+       slidesToScroll: 1
+   });
+
+   $('.js-news-inn-slider').slick({
+       arrows: true,
+       infinite: true,
+       dots: false,
+       slidesToShow: 6,
+       slidesToScroll: 1
    });
 });
