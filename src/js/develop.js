@@ -22,4 +22,11 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
     });
+    $('.js-products-slider').slick({
+        arrows: true,
+        infinite: true,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 });

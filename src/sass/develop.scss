@@ -168,7 +168,7 @@ a:hover {text-decoration: none;}
 .media { background-color: #e8e9eb;
     &__header {width: 100%; max-width: 1290px; }
     &__baba {right: 68px; left: auto; top: 50px;}
-    &__torso {justify-content: flex-start; padding: 0 8px;}
+    &__torso {justify-content: flex-start; padding: 0 18px;}
     &__zagolovok {font-size: 22px; color: #424652; font-weight: 700; display: inline-block; margin-bottom: 16px;
         &--white {color: #fff;}
     }
@@ -208,7 +208,7 @@ a:hover {text-decoration: none;}
 .news-inn {position: relative;
     h4 {margin-bottom: 0; padding-right: 40px; padding-top: 25px;}
     &__date {font-family: 'RobotoSlab', Arial, sans-serif;  color: #999999; font-size: 14px; margin-top: 8px; margin-bottom: 15px;}
-    &__closer { width: 50px; height: 50px; position: absolute; top: 12px; right: 20px; padding: 0; border: 0; background-color: transparent; opacity: 0.4; transition: all 0.2s; transform: rotateZ(45deg); cursor: pointer;
+    &__closer { width: 50px; height: 50px; position: absolute; top: 12px; right: 20px; padding: 0; border: 0; background-color: transparent; opacity: 0.4; transition: all 0.2s; transform: rotateZ(45deg); cursor: pointer; z-index: 100;
         &:hover {opacity: 1;}
         &:after {content: ''; display: block; width: 100%; height: 2px; position: absolute; top: 50%; transform: translateY(-50%); background-color: #424652;}
         &:before {content: ''; display: block; height: 100%; width: 2px; position: absolute; top: 0; left: 50%; transform: translateX(-50%); background-color: #424652;}
@@ -313,6 +313,25 @@ a:hover {text-decoration: none;}
         &--big {width: 508px;}
     }
     &__img-box {background-color: #fff; border-radius: 4px;}
+    &__place {display: flex;}
+    &__about {background-color: #fff; padding: 20px; height: 100%;
+        h4 {border-bottom: 1px solid #ececed; margin: 0; line-height: 27px; padding: 0 0 13px 0; margin-bottom: 14px;}
+    }
+    &__slide {width: 500px; height: 500px; display: flex; align-items: center; justify-content: center;}
+    &__slider {margin: 0;}
+    &__slider-wrap {display: flex; margin-bottom: 25px;}
+    &__button-place {padding: 0;}
+    &__left-part {width: 500px; background-color: #fff;}
+    &__view {display: flex; align-items: center; justify-content: center; height: 100%; border-radius: 4px;
+        img {width: 100%; height: auto; border-radius: 4px;}
+    }
+    &__row-txt {width: 100%; display: flex; align-items: flex-start; padding: 6px 0;
+        p {margin: 0; width: 43%;}
+        span {padding: 0 8px; width: 57%; line-height: 22px;}
+    }
+    &__collumn {width: 50%; display: inline-block;}
+    .slick-prev {left: -113px; top: 45%;}
+    .slick-next {right: -444px; top: 45%;}
 }
 
 
@@ -320,6 +339,27 @@ a:hover {text-decoration: none;}
 
 
 
+@media screen and (max-width: 1080px){
+    .products {
+        .slick-prev {left: 0;}
+        .slick-next { right: -302px; }
+    }
+}
+@media screen and (max-width: 930px){
+    .products {
+        .slick-prev {left: 0;}
+        .slick-next { right: 0; }
+        &__slider-wrap {flex-wrap: wrap; justify-content: center;}
+        &__right-part { width: 500px;}
+        &__slide {height: auto;}
+    }
+}
+@media screen and (max-width: 520px){
+    .products {
+        &__left-part { width: 95%;}
+        &__right-part { width: 95%;}
+    }
+}
 
 
 
