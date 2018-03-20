@@ -286,7 +286,23 @@ a:hover {text-decoration: none;}
     &__blocks {display: flex; margin-left: -10px;}
 }
 
-
+.gallery {
+    &__image {
+        img {margin: 0 auto;}
+    }
+    &__source {display: flex; align-items: center; justify-content: center; margin: 20px 0;}
+    &__source-img {margin: 0 5px;}
+    &__source-where {display: inline-block; margin: 0px 5px;}
+    .slick-arrow { cursor: pointer; opacity: 0.5; transition: all 0.2s; min-width: 38px; min-height: 38px; top: 38.5%; z-index: 10;
+        &:hover {opacity: 1;}
+        &:before {content: ''; width: 27px; height: 4px; background-color: #424652; border-radius: 2px; position: absolute;top: 0;
+            left: 0; }
+        &:after {content: ''; width: 4px; height: 27px; background-color: #424652; border-radius: 2px; position: absolute; top: 0;
+            left: 0;}
+    }
+    .slick-prev {transform: rotateZ(-45deg); left: 5px;}
+    .slick-next {transform: rotateZ(135deg); right: 5px;}
+}
 
 
 
