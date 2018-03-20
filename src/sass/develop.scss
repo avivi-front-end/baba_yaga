@@ -326,7 +326,7 @@ a:hover {text-decoration: none;}
         img {width: 100%; height: auto; border-radius: 4px;}
     }
     &__row-txt {width: 100%; display: flex; align-items: flex-start; padding: 6px 0;
-        p {margin: 0; width: 43%;}
+        p {margin: 0; width: 43%; line-height: 22px;}
         span {padding: 0 8px; width: 57%; line-height: 22px;}
     }
     &__collumn {width: 50%; display: inline-block;}
