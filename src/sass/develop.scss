@@ -160,7 +160,7 @@ a:hover {text-decoration: none;}
     }
     &__source {display: inline-block;}
     &__img-box {position: relative; margin-bottom: 12px;}
-    &__hot {position: absolute; bottom: 5px; left: -6px;}
+    &__hot {position: absolute; bottom: -7px; left: -6px;}
     &__video {border-radius: 4px; width: 100%; height: 370px; margin-bottom: 18px;}
 }
 
@@ -247,7 +247,7 @@ a:hover {text-decoration: none;}
 
 
 .list { display: flex; padding: 217px 0 204px; width: 100%;
-    &__right { padding-top: 6px;
+    &__right { width: 230px; padding-left: 30px; padding-right: 10px; position: fixed; right: calc(50% - 650px);
         ul {list-style-type: none; padding: 0;
             li { margin: 15px 0;
                 a {font-weight: 700; font-size: 20px; color: #424652; text-decoration: underline dotted; line-height: 20px; display: inline-block;
@@ -256,13 +256,13 @@ a:hover {text-decoration: none;}
             }
         }
     }
-    &__left {width: 85%;}
+    &__left {width: calc(100% - 230px);}
     &__title { position: relative; margin-top: 13px;
         h4 {background-color: #e8e9eb; padding-right: 8px; margin-top: 0;}
-        &:after {content: ''; display: block; width: 95.5%; height: 1px; position: absolute; top: 15px; background-color: #b6b8bd; z-index: -1;}
+        &:after {content: ''; display: block; width: 100%; height: 1px; position: absolute; top: 15px; background-color: #b6b8bd; z-index: -1;}
     }
-    &__content {display: flex; flex-wrap: wrap; margin-right: -20px;}
-    &__img-box {width: 244px; height: 244px; margin: 0px 20px 20px 0;
+    &__content {display: flex; flex-wrap: wrap; margin: 0 -10px; justify-content: space-between;}
+    &__img-box {width: 244px; height: 244px; margin: 10px;
         &--last {background-color: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;
             span {font-weight: 700; font-size: 20px; color: #424652; margin: 10px 0; padding: 10px;
                 a {background: none; color: #424652; display: inline-block; }
@@ -270,7 +270,7 @@ a:hover {text-decoration: none;}
         }
         img {object-fit: cover;}
     }
-    &__music {width: 47%; padding-right: 10px; margin-top: -11px;}
+    &__music {width: 47%; padding-right: 10px; margin-top: -11px; margin: 0 10px;}
     &__about-music {width: 50%; padding-left: 10px;
         p {margin-bottom: 10px;   padding-right: 45px; line-height: 22px;}
     }
@@ -278,12 +278,12 @@ a:hover {text-decoration: none;}
     &__track {margin: 10px 0;}
     &__app {padding: 0;}
     &__apps {margin: 5px 0px 10px;}
-    &__video {margin: 0 20px 20px 0;
+    &__video {margin: 10px;
         a { display: inline-block;}
         img {margin-bottom: 19px; border-radius: 4px;}
         p {color: #999999; margin-bottom: 0px; margin-top: 9px;}
     }
-    &__blocks {display: flex; margin-left: -10px;}
+    &__blocks {display: flex;}
 }
 
 .gallery {
@@ -304,7 +304,16 @@ a:hover {text-decoration: none;}
     .slick-next {transform: rotateZ(135deg); right: 5px;}
 }
 
-
+.products {
+    &__row {width: 100%; display: flex;}
+    &__col {display: flex; flex-grow: 1; width: 50%; flex-wrap: wrap; justify-content: space-between;}
+    &__box {width: 244px; margin: 10px 10px 5px 10px;
+        img {object-fit: cover; border-radius: 4px;}
+        a {display: inline-block; margin: 10px 0 5px;}
+        &--big {width: 508px;}
+    }
+    &__img-box {background-color: #fff; border-radius: 4px;}
+}
 
 
 
