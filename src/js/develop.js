@@ -1,10 +1,12 @@
 $(document).ready(function () {
    $('.js-screen-slider').slick({
        arrows: false,
-       infinite: true,
+       infinite: false,
        dots: false,
        slidesToShow: 5,
-       slidesToScroll: 1
+       slidesToScroll: 1,
+       centerMode: true,
+       swipeToSlide: true
    });
 
    $('.js-news-inn-slider').slick({
